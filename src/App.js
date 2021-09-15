@@ -16,8 +16,8 @@ function App() {
       .get("https://pokeapi.co/api/v2/pokemon?limit=30")
       .then((res) => {
         if (res.status >= 200 && res.status <= 299) {
-          const fetchedPokemon = res.data
-          // setIsLoading(false)
+          const fetchedPokemon = res.data.results
+          setIsLoading(false)
           setPokemonList(fetchedPokemon)
         }
       })
@@ -27,17 +27,15 @@ function App() {
       })
   }, [])
 
-  console.log(pokemonList)
-
   if (isLoading) {
     return <LoadingScreen />
   }
 
   return (
     <div className="App">
-      {/* {pokemonList.map((pokemon) => {
-        return <PokeContainer pokemon={pokemon} />
-      })} */}
+      {pokemonList.map((pokemon) => (
+        <PokeContainer pokemon={pokemon} />
+      ))}
     </div>
   )
 }

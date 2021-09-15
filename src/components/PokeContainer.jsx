@@ -5,6 +5,7 @@
 import React from "react"
 
 const PokeContainer = ({ pokemon }) => {
+  console.log(pokemon.name)
   return (
     <article>
       <h1>{pokemon.name}</h1>

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -29,8 +29,22 @@ body {
   width: 30rem;
 
   .loading-speech {
+    pointer-events: none;
+    position: absolute;
+    left: -5rem;
+    top: -7rem;
     background-color: #fff;
     border: 1px solid black;
+    padding: 2rem 3rem;
+    border-radius: 45%;
+    &::after {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+
+      border-top: 20px solid #f00;
+    }
   }
 }
 
