@@ -27,22 +27,31 @@ body {
   object-fit: contain;
   height: 30rem;
   width: 30rem;
-}
-.loading-container .loading-speech {
-  background-color: #fff;
-  border: 1px solid black;
+
+  .loading-speech {
+    background-color: #fff;
+    border: 1px solid black;
+  }
 }
 
 @keyframes floatingSpeech {
   0% {
     transform: translateY(0);
   }
+
   55% {
     transform: translateY(-2rem);
   }
+
   100% {
     transform: translateY(0);
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+// @keyframes floatingSpeech
+//   from
+//     transform: translateY(0)
+//   55%
+//     transform: translateY(-2rem)
+//   to
+//     transform: translateY(0)
