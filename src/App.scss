@@ -20,6 +20,12 @@ body {
   flex-direction: column;
 }
 
+// Inputs Container
+
+.inputs-container {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .loading-container {
   position: relative;
   display: flex;
@@ -42,10 +48,18 @@ body {
       height: 0;
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
-
       border-top: 20px solid #f00;
     }
   }
+}
+
+// Show Pokemons Container
+
+.show-pokemons {
+  max-width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 @keyframes floatingSpeech {

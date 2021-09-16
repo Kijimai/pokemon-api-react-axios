@@ -18,6 +18,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url("../public/images/pokemonBG.jpg");
+}
+
+.inputs-container {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .loading-container {
@@ -44,6 +49,13 @@ body {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #f00;
+}
+
+.show-pokemons {
+  max-width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 @keyframes floatingSpeech {
