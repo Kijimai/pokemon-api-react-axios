@@ -4,11 +4,16 @@
 
 import React from "react"
 
-const PokeContainer = ({ pokemon }) => {
-  console.log(pokemon.name)
+const PokeContainer = ({ pokemon, handleShowPokemon }) => {
   return (
-    <article>
-      <h1>{pokemon.name}</h1>
+    <article key={pokemon.id}>
+      <button
+        name={pokemon.name}
+        className="btn pokemon-btn"
+        onClick={(e) => handleShowPokemon(e.target.name)}
+      >
+        {pokemon.name}
+      </button>
     </article>
   )
 }
