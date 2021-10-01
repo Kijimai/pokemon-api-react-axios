@@ -5,6 +5,7 @@
 import React from "react"
 
 const PokeContainer = ({ pokemon, handleShowPokemon }) => {
+  console.log(pokemon)
   return (
     <article key={pokemon.id}>
       <button

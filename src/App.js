@@ -118,7 +118,7 @@ function App() {
             />
           </div>
         )}
-        {pokemonList.map((pokemon) => (
+        {pokemonList.slice(0, `${offset}`).map((pokemon) => (
           <PokeContainer
             key={pokemon.id}
             pokemon={pokemon}
